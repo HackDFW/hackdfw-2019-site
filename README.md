@@ -2,7 +2,7 @@
 
 ![Logo](img/logo_small.png)
 
-The website for HackDFW 2015.
+The website for HackDFW 2019.
 
 ## License
 
