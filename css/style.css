@@ -70,13 +70,13 @@ a:hover {
 
 
 section.container h2 {
-  font-family: brandon;
+  font-family: brandon, sans-serif;
   font-weight: bold;
   font-size: 2.5em;
   margin-bottom: 50px;
 }
 section.container h3 {
-  font-family: brandon;
+  font-family: brandon, sans-serif;
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -95,7 +95,7 @@ section.quote p {
     text-align: center;
 }
 section.quote i {
-  font-family: brandon;
+  font-family: brandon, sans-serif;
   font-size: 1.6em;
   font-style: normal;
   font-weight: bold;
@@ -104,7 +104,7 @@ section.quote i {
 .jumbotron {
   background: none;
   text-align: center;
-  font-family: brandon;
+  font-family: brandon, sans-serif;
 }
 .jumbotron .logo {
   width: 200px;
@@ -148,9 +148,9 @@ section.quote i {
   outline: none;
 }
 nav.navbar {
-  padding: 30px 40px;
+  padding: 10px 30px;
   border: none;
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+  background: floralwhite;
 }
 nav ul.nav {
   font: 1.2em/1 brandon;
@@ -294,7 +294,7 @@ nav ul.nav {
   background: none;
   border: 2px dashed;
   display: inline-block;
-  font-family: "Brandon";
+  font-family: "Brandon", sans-serif;
   text-align: left;
   font-size: 1em;
   line-height: 1.2;
@@ -304,7 +304,7 @@ nav ul.nav {
 #sponsors .you span {
   display: block;
   font-size: 2em;
-  font-family: "Brandon";
+  font-family: "Brandon", sans-serif;
   font-style: italic;
   font-weight: bold;
 }
@@ -329,7 +329,7 @@ nav ul.nav {
   transition: all .2s ease-in-out;
 }
 #sponsorship form {
-  font-family: "Brandon";
+  font-family: "Brandon", sans-serif;
   margin-bottom: 40px;
 }
 #sponsorship .btn:hover {
@@ -367,7 +367,7 @@ nav ul.nav {
 }
 #sponsorship h3 {
   font-size: 1.6em;
-  font-family: sentinel;
+  font-family: sentinel, sans-serif;
   font-style: italic;
 }
 #sponsorship .say {
@@ -408,7 +408,7 @@ nav ul.nav {
 #contact h3 {
   margin-top: 60px;
   font-size: 2em;
-  font-family: sentinel;
+  font-family: sentinel, sans-serif;
   font-style: italic;
 }
 
