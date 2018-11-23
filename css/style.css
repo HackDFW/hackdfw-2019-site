@@ -298,7 +298,7 @@ nav ul.nav {
   text-align: left;
   font-size: 1em;
   line-height: 1.2;
-  opacity: 0.4;
+  opacity: 0.5;
   transition: all 100ms ease-in-out;
 }
 #sponsors .you span {
@@ -449,4 +449,22 @@ footer li a {
   #judges .judge {
     text-align: center;
   }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.hvr-bob {
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
 }
