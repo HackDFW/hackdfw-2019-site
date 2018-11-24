@@ -28,17 +28,17 @@ const PRECACHE_URLS = [
   'sponsors.html',
   './',
   '.',// Alias for index.html
-  'css/styles.css',
+  'css/style.css',
   'css/animate.min.css',
   'css/font-awesome.min.css',
   'css/style.css',
   'css/bootstrap.min.css',
   'js/javascript.js',
   'js/bootstrap.min.js',
-  'jquery.min.js',
-  'jquery.nav.js',
-  'two.min.js',
-  'underscore-min.js'
+  'js/jquery.min.js',
+  'js/jquery.nav.js',
+  'js/two.min.js',
+  'js/underscore-min.js'
 ];
 
 // The install handler takes care of precaching the resources we always need.
