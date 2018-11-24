@@ -22,7 +22,6 @@ const PRECACHE_URLS = [
   'index.html',
   'donate.html',
   'favicon.ico',
-  'HackDFW_Hardware.pdf',
   'secret.html',
   'sponsor.html',
   'sponsors.html',
