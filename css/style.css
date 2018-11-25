@@ -196,7 +196,7 @@ nav ul.nav {
 }
 
 
-#faq .question:after, #judges .judge:after {
+#faq .question:after {
   content: "";
   width: 80px;
   position: absolute;
@@ -210,19 +210,19 @@ nav ul.nav {
 }
 
 /*FAQ & Judges Colors!*/
-#faq .question:nth-child(5n+0):after, #judges .judge:nth-child(5n+0):after {
+#faq .question:nth-child(5n+0):after {
   border-bottom-color: #EE586E;
 }
-#faq .question:nth-child(5n+1):after, #judges .judge:nth-child(5n+1):after {
+#faq .question:nth-child(5n+1):after {
   border-bottom-color: #38C555;
 }
-#faq .question:nth-child(5n+2):after, #judges .judge:nth-child(5n+2):after {
+#faq .question:nth-child(5n+2):after {
   border-bottom-color: #1ED5C8;
 }
-#faq .question:nth-child(5n+3):after, #judges .judge:nth-child(5n+3):after {
+#faq .question:nth-child(5n+3):after {
   border-bottom-color: #FF9CA8;
 }
-#faq .question:nth-child(5n+4):after, #judges .judge:nth-child(5n+4):after {
+#faq .question:nth-child(5n+4):after {
   border-bottom-color: #18A8DE;
 }
 
@@ -385,6 +385,7 @@ nav ul.nav {
   height: 180px;
   margin: auto;
   display: block;
+  border-radius: 50%;
 }
 #judges h3 {
   font-size: 1.5em;
@@ -451,7 +452,9 @@ footer li a {
     text-align: center;
   }
 }
-
+.judgewrapper {
+  padding: 2px 16px;
+}
 @keyframes float {
   0% {
     transform: translatey(0px);
@@ -463,6 +466,7 @@ footer li a {
     transform: translatey(0px);
   }
 }
+
 
 .hvr-bob {
   overflow: hidden;
