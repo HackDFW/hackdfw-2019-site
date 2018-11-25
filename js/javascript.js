@@ -87,10 +87,50 @@ $('a[href*="#"]')
         $('html, body').animate({
           scrollTop: target.offset().top-50
         }, 800, function() {
+
         });
       }
     }
   });
+/*
+
+// Find all YouTube videos
+const $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+  // The element that is fluid width
+  $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  const newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    const $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+*/
+
 /*//make sure it runs after dom
 $(function() {
   if(!navigator.userAgent.match('CriOS')) {

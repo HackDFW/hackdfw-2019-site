@@ -11,7 +11,7 @@
   <title>HackDFW 2019 | The design-thinking hackathon of Dallas</title>
   <meta name="description" content="HackDFW is the design-thinking hackathon of Dallas. It is a place where you can be part of the nebulous, wondrous, awe-inspiring, frustrating-yet-glorious process of creating. A place where ideas aren't limited by fear or doubt, just 24 hours." />
   <meta name="keywords" content="hackathon, hackdfw, dallas, design-thinking, hacking, competition, ian macalinao, is not awesome, hackathons, dfw" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
 
@@ -25,12 +25,20 @@
   </div>
 
   <div id="background"></div>
-
-  <nav class="navbar navbar-fixed-top navbar-light navbar-expand-lg">
+  <nav class="navbar navbar-fixed-top navbar-light" role="navigation">
     <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: -12px">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar" style="font-size: 16px; font-weight: bolder;">---</span>
+          <span class="icon-bar" style="font-size: 16px; font-weight: bolder;">---</span>
+          <span class="icon-bar" style="font-size: 16px; font-weight: bolder;">---</span>
+        </button>
+        <a class="navbar-left" href="#" style="border-bottom: none"><img src="img/asterisk.png" style="max-height: 40px"></a>
+      </div>
       <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav nav-pills navbar-right">
-          <li class="active"><a href="#overview">Overview</a></li>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#overview">Overview</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="HackDFW_Hardware.pdf" target="_blank">Hardware</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
@@ -322,7 +330,7 @@
   </footer>
 
   <script src="js/jquery.min.js"></script>
-  <script async src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/two.min.js"></script>
   <script src="js/underscore-min.js"></script>
   <script src="js/jquery.nav.js"></script>
