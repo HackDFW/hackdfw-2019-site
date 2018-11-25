@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="icon" href="img/Logo.png" type="image/png" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-
-  <title>HackDFW 2019 | Sponsorship</title>
-  <meta name="description" content="HackDFW is the design-thinking hackathon of Dallas. It is a place where you can be part of the nebulous, wondrous, awe-inspiring, frustrating-yet-glorious process of creating. A place where ideas aren't limited by fear or doubt, just 24 hours." />
-  <meta name="keywords" content="hackathon, hackdfw, dallas, design-thinking, hacking, competition, ian macalinao, is not awesome" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
 <body>
 
-  <div id="shapes">
-    <object type="image/svg+xml" data="img/shapes/circle.svg"></object>
-    <object type="image/svg+xml" data="img/shapes/halfcircle.svg"></object>
-    <object type="image/svg+xml" data="img/shapes/rainbow.svg"></object>
-    <object type="image/svg+xml" data="img/shapes/rectangle.svg"></object>
-    <object type="image/svg+xml" data="img/shapes/square.svg"></object>
-    <object type="image/svg+xml" data="img/shapes/triangle.svg"></object>
-  </div>
+<div id="shapes">
+  <object type="image/svg+xml" data="img/shapes/circle.svg"></object>
+  <object type="image/svg+xml" data="img/shapes/halfcircle.svg"></object>
+  <object type="image/svg+xml" data="img/shapes/rainbow.svg"></object>
+  <object type="image/svg+xml" data="img/shapes/rectangle.svg"></object>
+  <object type="image/svg+xml" data="img/shapes/square.svg"></object>
+  <object type="image/svg+xml" data="img/shapes/triangle.svg"></object>
+</div>
 
-  <div id="background"></div>
-  <nav class="navbar navbar-fixed-top navbar-light" role="navigation">
+<div id="background"></div>
+<nav class="navbar navbar-fixed-top navbar-light" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: -12px">
@@ -50,13 +37,13 @@
       <h2>Becoming A Sponsor</h2>
     </div>
     <p>Join us as a sponsor of HackDFW's
-annual hackathon! Known to be one of the largest
-collegiate and professional hackathons in the entire
-United States. As featured on NPR, WFAA, Dallas
-Morning News, and CW33, we look for forward-thinking
-leaders to help us make our event a success. Five tiers are
-available to fit any budget, you can get a plethora of benefits
-including:</p>
+      annual hackathon! Known to be one of the largest
+      collegiate and professional hackathons in the entire
+      United States. As featured on NPR, WFAA, Dallas
+      Morning News, and CW33, we look for forward-thinking
+      leaders to help us make our event a success. Five tiers are
+      available to fit any budget, you can get a plethora of benefits
+      including:</p>
     <ul>
       <li>Recruiting pool from world-class developers, designers, and engineers</li>
       <li>Global brand recognition</li>
@@ -71,84 +58,83 @@ including:</p>
       <img class="sponsorpacket" src="img/sponsorship.png">
     </div>
     <div class="col-md-4">
-    <h3>Want to learn more?</h3>
-    <p>Download the sponsor packet!</p>
-    <form class="col-md-12" id="RegisterForm" action="//formspree.io/sponsorship@hackdfw.com" method="POST">
-      <input type="hidden" name="_subject" value="(1) Person is interested in the sponsor packet." />
-      <input type="text" name="_gotcha" style="display:none" />
-      <div class="row">
-        <div class="col-md-12">
-          <label>Name</label>
-          <input type="text" name="name"/>
+      <h3>Want to learn more?</h3>
+      <p>Download the sponsor packet!</p>
+      <form class="col-md-12" id="RegisterForm" action="http://localhost:3001" onsubmit="return validateForm()" method="POST">
+        <div class="row">
+          <div class="col-md-12">
+            <label>Name</label>
+            <input type="text" name="name"/>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <label>Phone</label>
-          <input type="text" name="phone"/>
+        <div class="row">
+          <div class="col-md-12">
+            <label>Phone</label>
+            <input type="text" name="phone"/>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <label>Email</label>
-          <input name="_replyto" type="email" />
+        <div class="row">
+          <div class="col-md-12">
+            <label>Email</label>
+            <input name="_replyto" type="email" />
+          </div>
         </div>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+      <div id="form-result"></div>
+      <h3>Contact the team.</h3>
+      <p>The HackDFW sponsorship team can be reached at <a href="mailto:sponsorship@hackdfw.com">sponsorship@hackdfw.com</a></p>
+    </div>
+    <div class="col-md-12 say">
+      <div class="col-md-12 text-center">
+        <h3>What some of our sponsors have to say...</h3>
       </div>
-      <button class="btn">Submit</button>
-    </form>
-    <h3>Contact the team.</h3>
-    <p>The HackDFW sponsorship team can be reached at <a href="mailto:sponsorship@hackdfw.com">sponsorship@hackdfw.com</a></p>
-  </div>
-  <div class="col-md-12 say">
-    <div class="col-md-12 text-center">
-      <h3>What some of our sponsors have to say...</h3>
+      <!-- State Farm -->
+      <div class="col-md-6 text-center video-container">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/jMhHiN5KOYM" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Touch Titan -->
+      <div class="col-md-6 text-center video-container">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/2Ow0Ub1EN3o" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- S5 -->
+      <div class="col-md-6 text-center video-container">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/RzFkCpdXX6w" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Precocity -->
+      <div class="col-md-6 text-center video-container">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/yZ-XybSVJnw" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- RN -->
+      <div class="col-md-6 text-center video-container">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/93VIVrxRqms" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Nod -->
+      <div class="col-md-6 text-center video-container">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/_XnJ8xPNkmg" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
-    <!-- State Farm -->
-    <div class="col-md-6 text-center video-container">
-      <iframe width="400" height="250" src="https://www.youtube.com/embed/jMhHiN5KOYM" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <!-- Touch Titan -->
-    <div class="col-md-6 text-center video-container">
-      <iframe width="400" height="250" src="https://www.youtube.com/embed/2Ow0Ub1EN3o" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <!-- S5 -->
-    <div class="col-md-6 text-center video-container">
-      <iframe width="400" height="250" src="https://www.youtube.com/embed/RzFkCpdXX6w" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <!-- Precocity -->
-    <div class="col-md-6 text-center video-container">
-      <iframe width="400" height="250" src="https://www.youtube.com/embed/yZ-XybSVJnw" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <!-- RN -->
-    <div class="col-md-6 text-center video-container">
-      <iframe width="400" height="250" src="https://www.youtube.com/embed/93VIVrxRqms" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <!-- Nod -->
-    <div class="col-md-6 text-center video-container">
-      <iframe width="400" height="250" src="https://www.youtube.com/embed/_XnJ8xPNkmg" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
   </div>
 </section>
-  <footer>
-    <div class="container">
-      <p class="pull-left">
-        &copy; 2018 HackDFW. Made with <span class="fa fa-heart" style="color: #EA4E4E"></span> in Dallas.
-        <a href="http://hackcodeofconduct.org/hackdfw" target="_blank">Code of Conduct</a>
-      </p>
-      <ul id="social" class="pull-right">
-        <li>
-          <a href="http://www.launchedindfw.com/">
-            <img src="http://www.launchedindfw.com/l.php?img=b&check=true" style="width:25px;position:relative;top:-5px;height:auto;">
-          </a>
-        </li>
-        <li><a href="mailto:info@hackdfw.com"><i class="fa fa-envelope"></i></a> </li>
-        <li><a href="https://instagram.com/hackdfw"><i class="fa fa-instagram"></i></a> </li>
-        <li><a href="https://twitter.com/hackdfw"><i class="fa fa-twitter"></i></a> </li>
-        <li><a href="https://facebook.com/hackdfw"><i class="fa fa-facebook"></i></a> </li>
-      </ul>
-    </div>
-  </footer>
+<footer>
+  <div class="container">
+    <p class="pull-left">
+      &copy; 2018 HackDFW. Made with <span class="fa fa-heart" style="color: #EA4E4E"></span> in Dallas.
+      <a href="http://hackcodeofconduct.org/hackdfw" target="_blank">Code of Conduct</a>
+    </p>
+    <ul id="social" class="pull-right">
+      <li>
+        <a href="http://www.launchedindfw.com/">
+          <img src="http://www.launchedindfw.com/l.php?img=b&check=true" style="width:25px;position:relative;top:-5px;height:auto;">
+        </a>
+      </li>
+      <li><a href="mailto:info@hackdfw.com"><i class="fa fa-envelope"></i></a> </li>
+      <li><a href="https://instagram.com/hackdfw"><i class="fa fa-instagram"></i></a> </li>
+      <li><a href="https://twitter.com/hackdfw"><i class="fa fa-twitter"></i></a> </li>
+      <li><a href="https://facebook.com/hackdfw"><i class="fa fa-facebook"></i></a> </li>
+    </ul>
+  </div>
+</footer>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/two.min.js"></script>
@@ -156,5 +142,45 @@ including:</p>
 <script src="js/jquery.nav.js"></script>
 <script src="js/scrollreveal.min.js"></script>
 <script src="js/javascript.js"></script>
+<script>
+  function validateForm() {
+    return true;
+  }
+  $(document).ready(function(){
+    let form = $('#RegisterForm');
+    form.submit(function(e) {
+      // prevent form submission
+      e.preventDefault();
+
+      // submit the form via Ajax
+      $.ajax({
+        url: form.attr('action'),
+        type: form.attr('method'),
+        dataType: 'html',
+        data: form.serialize(),
+      });
+      /*$.ajax({
+        url: 'localhost:3001',
+        type: form.attr('method'),
+        dataType: 'html',
+        data: form.serialize().email,
+      });*/
+      form[0].reset();
+    });
+  });
+</script>
 </body>
+<head>
+  <link rel="icon" href="img/Logo.png" type="image/png" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <title>HackDFW 2019 | Sponsorship</title>
+  <meta name="description" content="HackDFW is the design-thinking hackathon of Dallas. It is a place where you can be part of the nebulous, wondrous, awe-inspiring, frustrating-yet-glorious process of creating. A place where ideas aren't limited by fear or doubt, just 24 hours." />
+  <meta name="keywords" content="hackathon, hackdfw, dallas, design-thinking, hacking, competition, ian macalinao, is not awesome" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 </html>
