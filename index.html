@@ -43,16 +43,16 @@
           <li><a href="HackDFW_Hardware.pdf" target="_blank">Hardware</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#judges">Judges</a></li>
-          <li><a href="./donate">Donate</a></li>
           <li><a href="#contact">Contact Us</a></li>
+          <li><a href="./donate">Donate</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="container" id="overview">
+  <section class="container" id="top">
     <div class="jumbotron">
-      <div class="image-wrapper hvr-bob">
+      <div class="image-wrapper">
         <div class="logo rev"></div>
       </div>
       <h1 class="rev">HackDFW</h1>
@@ -64,7 +64,10 @@
     </div>
   </section>
 
-  <section class="quote container rev">
+  <button id="back2Top" title="Back to top" href="#">&#10148;</button>
+
+<section class="container" id="overview">
+  <section class="quote container rev" style="margin-top: 10px">
     <p class="col-md-8 col-md-offset-2"><i>HackDFW is the design-thinking hackathon of Dallas.</i> <br>It is a place where you can be part of the nebulous, wondrous, awe-inspiring, frustrating-yet-glorious process of creating. A place where ideas aren't limited by fear or doubt, just 24 hours.</p>
   </section>
 
@@ -75,6 +78,7 @@
   <section class="quote container rev">
     <p class="col-md-8 col-md-offset-2"><i>What is design thinking?</i> <br>A way of problem solving that allows you to create innovative solutions rooted in people's needs through collaboration, empathy and iteration.</p>
   </section>
+</section>
 
   <section class="container" id="faq">
     <div class="col-md-8 col-md-offset-2">
@@ -282,10 +286,9 @@
         <h3>Hello!</h3>
         <p>We'd love to hear from you! We are a friendly bunch and open to discussing new ideas, improvements or partnerships. </p>
         <a href="mailto:info@hackdfw.com">info@hackdfw.com</a>
-        <h3>Come see us, y'all.</h3>
-        <p>Pay us a visit or send us snail mail.</p>
-        <p>211 N. Ervay St 7th Floor<br/>
-          Dallas, TX 75201</p>
+        <h3>Got something for us?</h3>
+        <p>Send us snail mail!</p>
+        <p>21601 Bryan St, Fl 42,<br/> Dallas, TX 75201</p>
       </div>
       <div class="col-md-4 rev">
         <h3>Follow us.</h3>
@@ -346,5 +349,25 @@
     }
     navigator.serviceWorker.ready.then();
   </script>
+<script>
+  /*Scroll to top when arrow up clicked BEGIN*/
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+      $('#back2Top').fadeIn();
+    } else {
+      $('#back2Top').fadeOut();
+    }
+  });
+  $(document).ready(function() {
+    $("#back2Top").click(function(event) {
+      event.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+    });
+
+  });
+  /*Scroll to top when arrow up clicked END*/
+</script>
 </body>
 </html>
