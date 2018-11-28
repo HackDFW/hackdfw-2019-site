@@ -28,17 +28,9 @@
   src: url("../fonts/Sentinel-BoldItalic.otf");
 }
 
-html {
-  min-height: 100%;
-  overflow-y: scroll;
-}
-
 body {
   font: 14pt/1.5 sentinel;
   padding-top: 55px;
-  /* Don't touch the following line. Trust me. */
-  border: 1px solid transparent;
-  min-height: 100%;
 }
 
 
