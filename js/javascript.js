@@ -41,7 +41,7 @@ function generateShapes() {
     shape.opacity = 0;
     shape.visible = true;
 
-    var opacity, step, stepX, stepY, initialX, initialY;
+    let opacity, step, stepX, stepY, initialX, initialY;
     shape.start = function() {
       stepX = _.random(-10,10)/5;
       stepY = _.random(-10,10)/5;
