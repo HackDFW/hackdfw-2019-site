@@ -25,6 +25,8 @@ const PRECACHE_URLS = [
   'secret.html',
   'sponsor.html',
   'sponsors.html',
+  './',
+  '.',// Alias for index.html
   'css/style.css',
   'css/animate.min.css',
   'css/font-awesome.min.css',
@@ -71,8 +73,19 @@ self.addEventListener('fetch', event => {
   // Skip cross-origin requests, like those for Google Analytics.
   if (event.request.url.startsWith(self.location.origin)) {
     event.respondWith(
-      fetch(event.request).catch(function() {
-        return caches.match(event.request);
+      caches.match(event.request).then(cachedResponse => {
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+
+        return caches.open(RUNTIME).then(cache => {
+          return fetch(event.request).then(response => {
+            // Put a copy of the response in the runtime cache.
+            return cache.put(event.request, response.clone()).then(() => {
+              return response;
+            });
+          });
+        });
       })
     );
   }
