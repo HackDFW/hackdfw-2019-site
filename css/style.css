@@ -28,8 +28,6 @@
   src: url("../fonts/Sentinel-BoldItalic.otf");
 }
 
-
-
 body {
   font: 14pt/1.5 sentinel;
   padding-top: 55px;
@@ -49,7 +47,7 @@ a:hover {
 #shapes * {
   visibility: hidden;
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   top: -13337px;
   left: -13337px;
 }
@@ -180,7 +178,12 @@ nav ul.nav {
   border-bottom: 5px solid #FDDB00;
   border-radius: 0;
 }
-.nav>li>a.blog:hover {
+
+.nav>li.active>a {
+  border-bottom: 5px solid #18A8DE;
+}
+/* .nav>li>a.blog:hover {
+>>>>>>> master
   border-bottom: 5px solid #00D6C9;
 }
 
@@ -417,6 +420,7 @@ nav ul.nav {
 
 footer {
   margin-top: 200px;
+  overflow: hidden;
 }
 footer li {
   float: right;
