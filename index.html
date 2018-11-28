@@ -13,7 +13,7 @@
   <meta name="keywords" content="hackathon, hackdfw, dallas, design-thinking, hacking, competition, ian macalinao, is not awesome, hackathons, dfw" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <div id="shapes">
     <object type="image/svg+xml" data="img/shapes/circle.svg"></object>
@@ -37,7 +37,8 @@
         <a class="navbar-left" href="#" style="border-bottom: none"><img src="img/asterisk.png" style="max-height: 40px"></a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav menuitems navbar-right">
+          <li class="active"><a href="#top">Home</a></li>
           <li><a href="#overview">Overview</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
@@ -64,7 +65,7 @@
     </div>
   </section>
 
-  <button id="back2Top" title="Back to top" href="#">&#10148;</button>
+  <button id="back2Top" title="Back to top" href="#">Back To Top</button>
 
 <section class="container" id="overview">
   <section class="quote container rev" style="margin-top: 10px">
@@ -344,25 +345,5 @@
     }
     navigator.serviceWorker.ready.then();
   </script>
-<script>
-  /*Scroll to top when arrow up clicked BEGIN*/
-  $(window).scroll(function() {
-    var height = $(window).scrollTop();
-    if (height > 100) {
-      $('#back2Top').fadeIn();
-    } else {
-      $('#back2Top').fadeOut();
-    }
-  });
-  $(document).ready(function() {
-    $("#back2Top").click(function(event) {
-      event.preventDefault();
-      $("html, body").animate({ scrollTop: 0 }, "slow");
-      return false;
-    });
-
-  });
-  /*Scroll to top when arrow up clicked END*/
-</script>
 </body>
 </html>
