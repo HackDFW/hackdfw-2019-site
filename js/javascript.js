@@ -20,12 +20,13 @@ const particles = []; //list of all unique particles from shapes
 const two = new Two(params).appendTo(elem);
 
 //find all shapes
-const objects = $('#shapes object');
+const objects = $('#shapes').find('object');
 let count = objects.length;
 objects.each(function(i, el) {
   el.onload = function() {
     const shape = two.interpret($(el).contents().find('svg')[0]);
     shape.visible = false;
+    shape.opacity = 0;
     shapes.push(shape);
     if (!--count) generateShapes();
   }
@@ -40,7 +41,7 @@ function generateShapes() {
     shape.opacity = 0;
     shape.visible = true;
 
-    let opacity, step, stepX, stepY, initialX, initialY;
+    var opacity, step, stepX, stepY, initialX, initialY;
     shape.start = function() {
       stepX = _.random(-10,10)/5;
       stepY = _.random(-10,10)/5;
