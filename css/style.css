@@ -47,14 +47,16 @@ a:hover {
 }
 
 #shapes * {
+  display: block;
   visibility: hidden;
   pointer-events: none;
+  overflow: hidden;
   position: absolute;
   top: -13337px;
   left: -13337px;
 }
 #background {
-  z-index: -1;
+  z-index: -1000;
   position: fixed;
   width: 100%;
   height: 100%;
