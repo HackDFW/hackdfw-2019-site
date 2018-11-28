@@ -28,11 +28,17 @@
   src: url("../fonts/Sentinel-BoldItalic.otf");
 }
 
-
+html {
+  min-height: 100%;
+  overflow-y: scroll;
+}
 
 body {
   font: 14pt/1.5 sentinel;
   padding-top: 55px;
+  /* Don't touch the following line. Trust me. */
+  border: 1px solid transparent;
+  min-height: 100%;
 }
 
 
@@ -128,6 +134,12 @@ section.quote i {
   margin-bottom: 30px;
 }
 
+.jumbotron .sub2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 3px;
+}
+
 .jumbotron .btn {
   background: none;
   border: 4px solid;
@@ -166,7 +178,7 @@ nav ul.nav {
   transition: all 200ms ease-in-out;
 }
 .nav:hover>li.active>a {
-  border-bottom: 5px solid transparent;
+  border-bottom: 5px solid #18A8DE;
 }
 .nav>li>a:hover, .nav>li>a:visited {
   background: none;
@@ -187,6 +199,9 @@ nav ul.nav {
   border-bottom: 5px solid #00D6C9;
 } */
 
+.nav>li.active>a {
+  border-bottom: 5px solid #18A8DE;
+}
 
 #faq .question:nth-child(even) {
   margin-bottom: 70px;
@@ -536,27 +551,27 @@ footer li a {
 }
 
 #back2Top {
-  width: 40px;
-  line-height: 40px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  width: auto;
+/*  line-height: 40px;*/
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
   overflow: hidden;
   z-index: 999;
   display: none;
   cursor: pointer;
   position: fixed;
-  -moz-transform: rotate(270deg);
+/*  -moz-transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   -o-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
+  transform: rotate(270deg);*/
   bottom: 50px;
   right: 10px;
-  background-color: antiquewhite;
+  background-color: #FCD900;
   color: #444;
   text-align: center;
-  font-size: 30px;
+  font-size: 14px;
   text-decoration: none;
   box-shadow: none;
   border: none;
