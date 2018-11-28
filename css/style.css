@@ -170,19 +170,19 @@ nav ul.nav {
 }
 .nav>li>a:hover, .nav>li>a:visited {
   background: none;
-  border-bottom: 5px solid #FDDB00;
+  border-bottom: 5px solid #18A8DE;
   border-radius: 0;
   color: #000;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
   background: none;
   color: #000;
-  border-bottom: 5px solid #FDDB00;
+  border-bottom: 5px solid #18A8DE;
   border-radius: 0;
 }
-.nav>li>a.blog:hover {
+/* .nav>li>a.blog:hover {
   border-bottom: 5px solid #00D6C9;
-}
+} */
 
 
 #faq .question:nth-child(even) {
@@ -466,7 +466,6 @@ footer li a {
     transform: translatey(0px);
   }
 }
-
 
 .hvr-bob {
   overflow: hidden;
