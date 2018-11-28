@@ -20,12 +20,13 @@ const particles = []; //list of all unique particles from shapes
 const two = new Two(params).appendTo(elem);
 
 //find all shapes
-const objects = $('#shapes object');
+const objects = $('#shapes').find('object');
 let count = objects.length;
 objects.each(function(i, el) {
   el.onload = function() {
     const shape = two.interpret($(el).contents().find('svg')[0]);
     shape.visible = false;
+    shape.opacity = 0;
     shapes.push(shape);
     if (!--count) generateShapes();
   }
@@ -49,6 +50,7 @@ function generateShapes() {
       initialY = _.random(0,two.height);
       shape.translation.set(initialX,initialY);
       opacity = -1.0;
+      return false;
     };
     shape.step = function() {
       if (shape.opacity <= 0) shape.start();
@@ -57,8 +59,10 @@ function generateShapes() {
       shape.translation.y += stepY;
       shape.rotation += step;
       shape.opacity = 1 - Math.abs(opacity);
+      return false;
     };
     particles.push(shape);
+    return false;
   });
 }
 //main animation
@@ -86,14 +90,31 @@ $('a[href*="#"]')
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top-50
-        }, 800, function() {
+        }, 700, function() {
 
         });
       }
     }
   });
-/*
+/*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+  var height = $(window).scrollTop();
+  if (height > 100) {
+    $('#back2Top').fadeIn();
+  } else {
+    $('#back2Top').fadeOut();
+  }
+});
+$(document).ready(function() {
+  $("#back2Top").click(function(event) {
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
 
+});
+/*Scroll to top when arrow up clicked END*/
+/*
 // Find all YouTube videos
 const $allVideos = $("iframe[src^='//www.youtube.com']"),
 

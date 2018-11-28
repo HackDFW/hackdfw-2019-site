@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <link rel="icon" href="img/Logo.png" type="image/png" />
@@ -13,7 +12,7 @@
   <meta name="keywords" content="hackathon, hackdfw, dallas, design-thinking, hacking, competition, ian macalinao, is not awesome, hackathons, dfw" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <div id="shapes">
     <object type="image/svg+xml" data="img/shapes/circle.svg"></object>
@@ -25,7 +24,7 @@
   </div>
 
   <div id="background"></div>
-  <nav class="navbar navbar-fixed-top navbar-light" role="navigation">
+  <nav class="navbar navbar-fixed-top navbar-light" style="background-color: #FCD900" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="margin-top: -12px">
@@ -37,26 +36,27 @@
         <a class="navbar-left" href="#" style="border-bottom: none"><img src="img/asterisk.png" style="max-height: 40px"></a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav menuitems navbar-right">
+          <li class="active"><a href="#top">Home</a></li>
           <li><a href="#overview">Overview</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="HackDFW_Hardware.pdf" target="_blank">Hardware</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#judges">Judges</a></li>
-          <li><a href="./donate">Donate</a></li>
           <li><a href="#contact">Contact Us</a></li>
+          <li><a href="./donate">Donate</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="container" id="overview">
+  <section class="container" id="top">
     <div class="jumbotron">
-      <div class="image-wrapper hvr-bob">
+      <div class="image-wrapper">
         <div class="logo rev"></div>
       </div>
       <h1 class="rev">HackDFW</h1>
-      <p class="subtitle rev">Spring 2019</p>
+      <p class="sub2 rev">February 16<sup>th</sup>-17<sup>th</sup> 2019</p>
+      <p class="sub2 rev">Women's Museum, Fair Park</p>
       <div class="rev">
         <a class="btn" href="http://register.hackdfw.com/register" target="_blank">Sign Up</a>
         <a class="btn" href="./sponsors">Sponsor</a>
@@ -64,7 +64,10 @@
     </div>
   </section>
 
-  <section class="quote container rev">
+  <button id="back2Top" title="Back to top" href="#">Back To Top</button>
+
+<section class="container" id="overview">
+  <section class="quote container rev" style="margin-top: 10px">
     <p class="col-md-8 col-md-offset-2"><i>HackDFW is the design-thinking hackathon of Dallas.</i> <br>It is a place where you can be part of the nebulous, wondrous, awe-inspiring, frustrating-yet-glorious process of creating. A place where ideas aren't limited by fear or doubt, just 24 hours.</p>
   </section>
 
@@ -75,6 +78,7 @@
   <section class="quote container rev">
     <p class="col-md-8 col-md-offset-2"><i>What is design thinking?</i> <br>A way of problem solving that allows you to create innovative solutions rooted in people's needs through collaboration, empathy and iteration.</p>
   </section>
+</section>
 
   <section class="container" id="faq">
     <div class="col-md-8 col-md-offset-2">
@@ -82,8 +86,8 @@
         <h2>FAQ</h2>
       </div>
       <div class="question col-md-6 rev">
-        <h3>Making a trip to Dallas?</h3>
-        <p>We're currently finalizing details for our Spring 2019 hackathon. Stay tuned on our social media pages! </p>
+        <h3>Where will it be?</h3>
+        <p>The Women's Museum in Fair Park! <br/>3800 Parry Ave, Dallas, TX 75226</p>
       </div>
       <div class="question col-md-6 rev">
         <h3>Who can attend?</h3>
@@ -108,6 +112,12 @@
         <p>A limited number of professionals will be welcomed to participate at a cost. Professional registrants are first-come-first-serve until tickets are sold out. Stay tuned for our early-bird tickets! </p>
       </div>
       <div class="question col-md-6 rev">
+        <h3>Hardware?</h3>
+        <p>Yes! We will have plenty of hardware including:</p>
+        <p>Raspberry PIs, Arduinos, VR headsets, Amazon Echos, and electronic components.</p>
+        <p>A more comprehensive list will be available after you RSVP!</p>
+      </div>
+      <div class="question col-md-6 rev">
         <h3>Are we allowed to build on past projects?</h3>
         <p>A hackathon is an experience to build something new within a set amount of time. Therefore, you cannot work on past projects. However, using your own open-source or third party libraries is fine, as long as the project is new.</p>
       </div>
@@ -123,11 +133,6 @@
         <h3>Will there be buses to HackDFW?</h3>
         <p>Yes! We are currently finalizing our bussed regions, but will be initially dependent on historic attendance record and refined by registration numbers.</p>
       </div>
-      <div class="question col-md-6 rev">
-        <h3>Where will it be?</h3>
-        <p>We'll be announcing our location soon after registrations open. Hint: It'll be in Dallas! If you're flying, the two options are DFW International Airport (DFW) or Dallas Love Field (DAL). Generally speaking, DFW has cheaper flights, but DAL is closer to our potential venue. </p>
-
-      </div>
     </div>
   </section>
 
@@ -138,7 +143,7 @@
   <!-- Note for anyone looking here, these sponsors are currently arbitrarily listed. -->
   <section class="container" id="sponsors">
     <div class="row text-center rev">
-      <h2>Past Select Sponsors</h2>
+      <h2>Sponsors and Partners</h2>
     </div>
     <!--
     <div class="row text-center partner">
@@ -282,10 +287,9 @@
         <h3>Hello!</h3>
         <p>We'd love to hear from you! We are a friendly bunch and open to discussing new ideas, improvements or partnerships. </p>
         <a href="mailto:info@hackdfw.com">info@hackdfw.com</a>
-        <h3>Come see us, y'all.</h3>
-        <p>Pay us a visit or send us snail mail.</p>
-        <p>211 N. Ervay St 7th Floor<br/>
-          Dallas, TX 75201</p>
+        <h3>Got something for us?</h3>
+        <p>Send us snail mail!</p>
+        <p>21601 Bryan St, Fl 42,<br/> Dallas, TX 75201</p>
       </div>
       <div class="col-md-4 rev">
         <h3>Follow us.</h3>
@@ -304,11 +308,6 @@
         <a href="http://hackcodeofconduct.org/hackdfw" target="_blank">Code of Conduct</a>
       </p>
       <ul id="social" class="pull-right">
-        <li>
-          <a href="http://www.launchedindfw.com/">
-            <img src="http://www.launchedindfw.com/l.php?img=b&check=true" style="width:25px;position:relative;top:-5px;height:auto;">
-          </a>
-        </li>
         <li><a href="mailto:info@hackdfw.com"><i class="fa fa-envelope"></i></a> </li>
         <li><a href="https://instagram.com/hackdfw"><i class="fa fa-instagram"></i></a> </li>
         <li><a href="https://twitter.com/hackdfw"><i class="fa fa-twitter"></i></a> </li>
