@@ -50,6 +50,7 @@ function generateShapes() {
       initialY = _.random(0,two.height);
       shape.translation.set(initialX,initialY);
       opacity = -1.0;
+      return false;
     };
     shape.step = function() {
       if (shape.opacity <= 0) shape.start();
@@ -58,8 +59,10 @@ function generateShapes() {
       shape.translation.y += stepY;
       shape.rotation += step;
       shape.opacity = 1 - Math.abs(opacity);
+      return false;
     };
     particles.push(shape);
+    return false;
   });
 }
 //main animation
