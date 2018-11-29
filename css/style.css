@@ -100,6 +100,11 @@ section.quote i {
   font-weight: bold;
 }
 
+.judgewrapper i {
+  font-style: italic;
+  font-weight: normal;
+}
+
 .jumbotron {
   background: none;
   text-align: center;
@@ -403,6 +408,13 @@ nav ul.nav {
 }
 #judges h4 {
   font-size: 5em;
+}
+#judges i {
+  font-weight: 300;
+}
+#judges i.title {
+  font-style: italic;
+  font-size: 1.12em;
 }
 #judges .row {
   margin-bottom: 50px;
