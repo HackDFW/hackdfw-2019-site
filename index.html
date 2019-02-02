@@ -412,6 +412,12 @@
   <!--<script src="js/scrollreveal.min.js"></script>-->
   <script src="js/javascript.js"></script>
 
+	<script>
+navigator.serviceWorker.getRegistrations().then(function(registrations) {
+ for(let registration of registrations) {
+  registration.unregister()
+} })
+	</script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89815712-1"></script>
 <script>
