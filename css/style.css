@@ -298,7 +298,8 @@ nav ul.nav {
 
 #sponsors .platinum img {
     max-height: 180px;
-    max-width: 70%;
+    max-width: 55%;
+    height: 120px;
     filter: none;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
