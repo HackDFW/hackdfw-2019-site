@@ -318,9 +318,9 @@ nav ul.nav {
 }
 
 #sponsors .silver img {
-    max-height: 95px;
+    max-height: 115px;
     filter: none;
-    max-width: 20%;
+    max-width: 22%;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -329,7 +329,7 @@ nav ul.nav {
 
 #sponsors .bronze img {
     max-height: 80px;
-    max-width: 15%;
+    max-width: 14%;
     filter: none;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
