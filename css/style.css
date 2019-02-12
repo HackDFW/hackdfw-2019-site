@@ -299,7 +299,7 @@ nav ul.nav {
 #sponsors .platinum img {
     max-height: 180px;
     max-width: 45%;
-    height: 120px;
+    height: 140px;
     filter: none;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -685,8 +685,11 @@ footer li a {
     font-weight: 700;
     color: #333;
     padding-right: 5px;
-    padding-bottom: 2px;
-    width: 50%
+    padding-bottom: 6px;
+    width: 50%;
+    text-decoration: underline;
+    text-decoration-color: lightslategrey;
+    border-collapse: collapse;
 }
 
 .time {
@@ -694,6 +697,14 @@ footer li a {
     vertical-align: text-top;
     text-align: left;
     padding-left: 5px;
-    padding-bottom: 2px;
-    width: 50%
+    padding-bottom: 6px;
+    width: 50%;
+    text-decoration: underline;
+    text-decoration-color: lightslategrey;
+    border-collapse: collapse;
 }
+
+/* .timetable tr{
+    border-bottom: 2px solid lightblue;
+    border-collapse: collapse;
+} */
